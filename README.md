@@ -52,7 +52,7 @@
 
 ## **HTML**
 
-1. 구간**:**
+1. **구간:**
 - 구간 태그 header는 <header>,<main>,<footer>로 구분
 - main을 구분할 때는 해당 페이지의 이름을 Class명으로 부여 (ex: works->works/contact->contact)
 - css, js 작업은 외부 링크로만 작성
@@ -102,7 +102,7 @@ htmlCopy code
 
 ## **JavaScript**
 
-1. 식별자명**:**
+1. **식별자명:**
 - 변수 선언은 지역변수로 작성을 기본
 - 변수 이름은 개발자들의 관습적인 이름을 사용
 
@@ -156,13 +156,13 @@ const mInp = document.querySelector('.m-inp');
 
 ## 담당 업무
 
-- 리더 ****
+- **리더**
     - 코드 가이드라인 정의
     - 작업 계획 작성 및 팀원 일정 조율
     - gsap에 대한 학습사이트 제공과 원리를 알기 쉽게 주석으로 표시
     - 작업 시 팀원들의 문제해결을 리더로써 적극적으로 도움
 
-- 작업
+- **작업**
     - main - intro 파트 / sub - Inside 페이지
     - header nav toggle 메뉴 구현
     - Javascript를 이용해 다양한 이벤트 구현
