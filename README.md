@@ -63,7 +63,130 @@
 - **Inside**
     
     header - 각 서브페이지 연결, 토글메뉴
+
+
+    # JJC 퍼블리싱 가이드라인
+
+## 공통(HTML/CSS)
+
+- 각 구간 안에는 <div>로 구분
+- <class>명: 해당 구간에 '앞글자(소문자)_의미 있는 명'을 붙임
     
+    **ex:** header 안에 menu => h_menu
+    
+
+```jsx
+<section class="main">
+    <main>
+        <div class="m_content">
+            <!-- 메인 콘텐츠 내용 -->
+        </div>
+    </main>
+</section>
+
+<section class="footer">
+    <footer>
+        <div class="f_info">
+            <!-- 푸터 정보 내용 -->
+        </div>
+    </footer>
+</section
+```
+
+- 작업 중간 중간 W3C 유효성 검사 필수
+- 주석으로 알아보기 쉽게 구간 표시
+
+## **HTML**
+
+1. **구간**
+- 구간 태그는 <header>, <secticon>, <footer> 사용
+- <section>의 <class>명은 해당 페이지의 제목으로 작성
+    
+    **ex:** works->works / contact->contact
+    
+- css, js는 외부 링크로 작성
+- 외부 링크 순서: <title> 하단에 og → favicon → font → reset → css
+- <script>의 외부 링크는 끝나는 </body> 위에 넣음
+- <meta>는 <title> 상단에 작성
+1. **들여쓰기**
+- space bar 2칸 기본 작성
+
+## **CSS**
+
+1. **선택자**
+- <class>명을 기본으로 작성
+- 작성법: 하위 선택자 기본
+    
+    **ex: .**h_container .btn{} (o) / **.**h_container > .btn{} or .btn{} or a{} (x)
+    
+
+```jsx
+<header>
+	<div class=“h_container”>
+		<a class=”btn”></a>
+		<a class=”btn”></a>
+	</div>
+</header>
+```
+
+- 특수한 경우에 그 외 선택자를 사용
+    
+    **ex:** a에 스타일이 공통적으로 들어가는 경우 **→** a{} (o)
+    
+1. **스타일** **시트 순서**
+- header → main → footer 작업
+1. **font**
+- font-family: ‘Pretendard’, *apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕",  "Apple SD Gothic Neo", sans-serif;*
+- 모바일과 PC는 동일하게 사용
+1. **미디어 쿼리**
+- 모바일 기준으로 작업 후 PC 작업
+- 브레이크 포인트: 모바일 ( width >= 200px ) / PC ( width>= 1200px ) 설정
+
+## **JavaScript**
+
+1. **식별자명**
+- 카멜표기법
+- 변수 선언: 지역변수 기본 작성
+- 변수명: 개발자들의 관습적인 명 사용
+
+```jsx
+
+// 예: 관습적인 명과 한글 주석은 상단 위치
+
+// 버튼 엘리먼트를 선택
+const btn = document.querySelector('.h_btn'); 
+// 입력 엘리먼트를 선택
+const inp = document.querySelector('.h_inp');   
+
+---------------------------------------------------
+
+// 틀린 예 : 자기만의 코드명 사용
+
+const mybtn123 = document.querySelector('.m_btn');
+// 버튼 엘리먼트를 선택 
+const hellobtn = document.querySelector('.m_inp');   
+// 입력 엘리먼트를 선택
+```
+
+1. **이벤트 처리**
+- 이벤트는 .addEventListener 를 사용
+- .onclick 사용은 지양
+
+## **JavaScript GSAP Plugins**
+
+- GSAP 플러그인 링크는 <script> 최상단에 넣음
+
+```jsx
+//플러그인은 항상 상단에 위치시킨다.
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+<script>
+	...~~
+</script>
+```
+
+- 사용 플러그인: ScrollTrigger v*3.12.2*, ScrollSmoother *v3.10.0*
 
 ### **문제 및 해결**
 
