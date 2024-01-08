@@ -122,9 +122,9 @@
 
 - Header
     
- ![그림2](https://github.com/wkd6262/JJCproject/assets/142865132/5badbc1a-bc72-4e84-8c50-7123f38e3327)
+    ![그림2](https://github.com/wkd6262/JJCproject/assets/142865132/5badbc1a-bc72-4e84-8c50-7123f38e3327)
     
- ![헤더1](https://github.com/wkd6262/JJCproject/assets/142865132/25164eb4-7cee-4162-85b5-798702fe1712)
+    ![헤더1](https://github.com/wkd6262/JJCproject/assets/142865132/25164eb4-7cee-4162-85b5-798702fe1712)
     
     - GSAP - ScrollTrigger 이용
     - 스크롤에 따라 PC 버전 메뉴가 생겼다가 사라지는 효과 (가독성 상승)
