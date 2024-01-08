@@ -1,13 +1,13 @@
-# JJC 팀 프로젝트
+# JJC 팀 프로젝트 보고서
 
 ## 프로젝트 개요
 
-- 수업에서 학습한 지식과 퍼블리싱 기술을 응용해 웹사이트를 개발
-- JavaScript 애니메이션 라이브러리 중 GSAP 학습
+- 스크롤 이벤트, 마우스 이벤트 등 각종 자바스크립트 애니메이션이 풍부해 시선이 즐거운 사이트
+- 이벤트 없이 보는 소개 들은 재미 없게 느껴 지나칠 수 있는데 이벤트로 시선을 이끌어 이목이 집중되게 한다.
 
 ## 기획 의도 & 목표
 
-- 고난도 반응형 웹사이트 개발을 통한 퍼블리싱 실력 향상과 협업 강화
+- 반응형 웹사이트 개발을 통한 퍼블리싱 실력 향상과 협업 강화
 - GSAP 라이브러리 활용을 통한 높은 퀄리티 웹사이트 구현 도전
 - 자바스크립트 숙련도 향상 및 다양한 문제 해결에 대한 전략 구축
 
@@ -18,194 +18,6 @@
 - 서브 페이지 개별 작업 후 피드백 주고 받기
 - 개별 메인 페이지 파트 작업 후 통합
 - 완성된 메인 페이지에 서브 페이지 연결
-
-## 사용 기술
-
-- **개발 Tool**
-    - Visual Studio Code
-- **웹 화면**
-    - HTML5 / CSS3 / JavaScript / GSAP
-- **프로젝트 관리 Tool**
-    - GitHub / Google Drive / Notion
-
-## 담당 업무
-
-- 리더 ****
-    - 코드 가이드라인 정의
-    - 작업 계획 작성 및 팀원 일정 조율
-    - gsap에 대한 학습사이트 제공과 원리를 알기 쉽게 주석으로 표시
-    - 작업 시 팀원들의 문제해결을 리더로써 적극적으로 도움
-
-- 작업
-    - main - intro 파트 / sub - Inside 페이지
-    - header nav toggle 메뉴 구현
-    - Javascript를 이용해 다양한 이벤트 구현
-    - 파워포인트 템플릿 작성
-    - 팀 프로젝트 발표
-
-## 프로젝트 내용
-
-### **페이지 구성**
-
-- **Main**
-    
-    Intro -
-    
-     js - 마우스 이벤트, 스크롤 이벤트
-    
-    css - position : sticky , 위치 값
-    
-
-- **Inside**
-    
-    header - 각 서브 페이지 연결, 토글 메뉴
-    
-    main- 스크롤 시 이미지의 위치가 변경하는 이벤트
-    
-    footer - family site 팝업
-    
-
-### **문제 및 해결**
-
-- **상황 1**
-    
-    서브페이지 설계 중 사전에 맞춘 디렉토리 구조에 맞게 경로 작성 했으나 이미지가 누락되는 상황 발생
-    
-    - **문제 확인 및 해결**
-        
-        경로가 멀어서 로딩이 오래 걸렸던 것. 
-        
-        ⇒ 각 서브 폴더 안에 이미지 폴더를 추가해서 경로를 줄임
-        
-- **상황 2**
-    
-    메인페이지의 파트를 나눠 각자 작업한 다음 병합 했더니 레이아웃이 무너지고, 동작들이 구현되지 않는 
-    
-    상황 발생
-    
-    - **문제 확인 및 해결**
-        
-        CSS에서 준 속성들에서 충돌이 일어나면서 JavaScript까지 영향
-        
-        ⇒ 개인 작업을 토대로 한 사람이 HTML, CSS를 다시 설계한 다음 필요한 JavaScript를 넣음
-        
-- **상황 3**
-    
-    메인 인트로 부분에 sticky 속성을 이용해서 아래 콘텐츠가 인트로 위로 겹치면서 올라오는 효과를
-    
-    주려 했으나 실패
-    
-    - **문제 확인 및 해결**
-        
-        sticky 대신 JavaScript 스크롤이벤트효과와 transition 값을 줘서 해결
-        
-- **상황 4**
-    
-    메인 Contact 부분에서 ‘브로슈어 신청하기’을 누르면 모달창이 열림과 동시에 페이지 최상단으로 이동하는 오류 발생
-    
-    - **문제 확인 및 해결**
-        
-        JavaScript에서 <a>태그 기본 성격을 지우지 않아서 발생
-        
-        ⇒ .preventDefault로 제거하여 해결 
-        
-- **상황 5**
-    
-    기존 사이트에서 가져온 svg에 GSAP MotionPath을 적용되지 않는 상황 발생
-    
-    - **문제 확인 및 해결**
-        
-        서브페이지 타이틀에 들어가는 모션은 이미지로 대체하고, 메인 about 파트는 제작한 영상으로 대체
-        
-
-## 요구사항 분석
-
-- Header
-    
-    ![그림2](https://github.com/wkd6262/JJCproject/assets/142865132/5badbc1a-bc72-4e84-8c50-7123f38e3327)
-    
-    ![헤더1](https://github.com/wkd6262/JJCproject/assets/142865132/25164eb4-7cee-4162-85b5-798702fe1712)
-    
-    - GSAP - ScrollTrigger 이용
-    - 스크롤에 따라 PC 버전 메뉴가 생겼다가 사라지는 효과 (가독성 상승)
-
----
-
-- Intro
-    
-    ![그림4](https://github.com/wkd6262/JJCproject/assets/142865132/c6e51aca-4b55-4384-aa7f-e6c6c4a29298)
-    
-    - JavaScript의 마우스 좌표를 이용
-    - 마우스 커서 움직임에 따라 이미지가 움직이는 효과
-
----
-
-- Works
-    
-    ![그림5](https://github.com/wkd6262/JJCproject/assets/142865132/3b544e18-07fc-4e28-b738-5ffcc12c3871)
-    
-    - CSS의 애니메이션 이용
-    
-    ![그림8](https://github.com/wkd6262/JJCproject/assets/142865132/e3e4921c-ce91-42d3-8b8d-01dd8aef56a3)
-
-    
-    - CSS: hover 이용
-    - 원하는 작업물에 마우스를 올리면 주황색 이미지가 올라오는 효과
-        - 작업물의 배너를 클릭하면 Works 페이지로 이동
-
----
-
-- About
-    
-    ![그림6](https://github.com/wkd6262/JJCproject/assets/142865132/86e38c71-348c-4fbb-aaf0-98c02ad69d77)
-    
-    - GSAP - ScrollTrigger 이용
-    
-
-![그림7](https://github.com/wkd6262/JJCproject/assets/142865132/3bd919a6-0c45-4590-9ef8-6eaa140a83c1)
-
-- 스크롤을 내리면 원이 커지면서 올라오는 효과
-
----
-
-- Contact
-    
-    ![그림9](https://github.com/wkd6262/JJCproject/assets/142865132/7d65f7e7-33ee-44bb-8219-629615ca7079)
-    
-    - JavaScript로 Kakao map 연결
-    - 마우스 커서 움직임에 따라 이미지가 움직이는 효과
-    
-    ![그림11](https://github.com/wkd6262/JJCproject/assets/142865132/7f987769-cb53-4040-b0ab-8aa83ba140e7)
-    
-    - JavaScript의 .addEventListener 이용
-    - 브로슈어 신청하기를 누르면 모달창열림
-
-![그림10](https://github.com/wkd6262/JJCproject/assets/142865132/404ade6b-6f10-4692-8869-7eb1fcb0ee56)
-
-- JavaScript의 .addEventListener 이용
-- 프로젝트 문의하기를 누르면 toggle 창 열리며 순차적으로동작하도록 구현
-
----
-
-- Inside
-    
-    ![그림12](https://github.com/wkd6262/JJCproject/assets/142865132/8fac9b43-cc23-4f04-bd9f-b5b8e79fa484)
-    
-    - GSAP - ScrollTrigger 이용
-    - .addEventListener를 이용한 스크롤 이벤트 효과 구현
-    - 스크롤이 해당 구간으로 오면 이미지가 스크롤 값에 맞춰 translateX 값이 변함
-    - 마우스 커서 움직임에 따라 이미지가 움직이는 효과
-
----
-
-- Footer
-    
-    ![그림3](https://github.com/wkd6262/JJCproject/assets/142865132/ba4d835e-8aa6-4625-91ed-8ea5236fd757)
-    
-    - JavaScript의 .addEventListener 이용
-    - 사이트 사용자의 이동 편리성을 위해 Family Site 모달창 추가
-
----
 
 # 코드가이드 라인
 
@@ -290,7 +102,7 @@ htmlCopy code
 
 ## **JavaScript**
 
-1. 식별자**명:**
+1. 식별자명**:**
 - 변수 선언은 지역변수로 작성을 기본
 - 변수 이름은 개발자들의 관습적인 이름을 사용
 
@@ -326,6 +138,172 @@ const mInp = document.querySelector('.m-inp');
 **"onclick" 속성 사용의 제한:**
 
 - HTML 요소에 "onclick" 속성을 직접 사용하여 이벤트 핸들러를 할당하는 것은 지양하며, 대신 **`addEventListener`** 함수를 활용하여 이벤트 처리를 구현합니다. 이로써 코드의 유지 보수성을 향상시키고 가독성을 높입니다.
+
+---
+
+## 디렉토리 구조
+
+![그림1](https://github.com/wkd6262/JJCproject/assets/142865132/0c88fd8a-3c63-41e7-a093-66975ece31bb)
+
+---
+
+## 사용 기술
+
+- **웹 화면**
+    - HTML5 / CSS3 / JavaScript / GSAP
+- **Tool**
+    - GitHub / Google Drive / Notion / Figma / Google Sheets
+
+## 담당 업무
+
+- 리더 ****
+    - 코드 가이드라인 정의
+    - 작업 계획 작성 및 팀원 일정 조율
+    - gsap에 대한 학습사이트 제공과 원리를 알기 쉽게 주석으로 표시
+    - 작업 시 팀원들의 문제해결을 리더로써 적극적으로 도움
+
+- 작업
+    - main - intro 파트 / sub - Inside 페이지
+    - header nav toggle 메뉴 구현
+    - Javascript를 이용해 다양한 이벤트 구현
+    - 파워포인트 템플릿 작성
+    - 팀 프로젝트 발표
+
+## 페이지 구성
+
+- Header
+    
+    ![그림2](https://github.com/wkd6262/JJCproject/assets/142865132/5badbc1a-bc72-4e84-8c50-7123f38e3327)
+    
+    ![헤더1](https://github.com/wkd6262/JJCproject/assets/142865132/25164eb4-7cee-4162-85b5-798702fe1712)
+    
+    - GSAP - ScrollTrigger 이용
+    - 스크롤에 따라 PC 버전 메뉴가 생겼다가 사라지는 효과 (가독성 상승)
+
+---
+
+- Intro
+    
+    ![그림4](https://github.com/wkd6262/JJCproject/assets/142865132/c6e51aca-4b55-4384-aa7f-e6c6c4a29298)
+    
+    - JavaScript의 마우스 좌표를 이용
+    - 마우스 커서 움직임에 따라 이미지가 움직이는 효과
+
+---
+
+- Works
+    
+    ![그림5](https://github.com/wkd6262/JJCproject/assets/142865132/3b544e18-07fc-4e28-b738-5ffcc12c3871)
+    
+    - CSS의 애니메이션 이용
+    
+    ![그림8](https://github.com/wkd6262/JJCproject/assets/142865132/e3e4921c-ce91-42d3-8b8d-01dd8aef56a3)
+    
+    - CSS: hover 이용
+    - 원하는 작업물에 마우스를 올리면 주황색 이미지가 올라오는 효과
+        - 작업물의 배너를 클릭하면 Works 페이지로 이동
+
+---
+
+- About
+    
+    ![그림6](https://github.com/wkd6262/JJCproject/assets/142865132/86e38c71-348c-4fbb-aaf0-98c02ad69d77)
+    
+    - GSAP - ScrollTrigger 이용
+    
+
+![그림7](https://github.com/wkd6262/JJCproject/assets/142865132/3bd919a6-0c45-4590-9ef8-6eaa140a83c1)
+
+- 스크롤을 내리면 원이 커지면서 올라오는 효과
+
+---
+
+- Contact
+    
+    ![그림9](https://github.com/wkd6262/JJCproject/assets/142865132/7d65f7e7-33ee-44bb-8219-629615ca7079)
+    
+    - JavaScript로 Kakao map 연결
+    - 마우스 커서 움직임에 따라 이미지가 움직이는 효과
+    
+    ![그림11](https://github.com/wkd6262/JJCproject/assets/142865132/99e3bf1d-a5ee-476e-ac4b-a2ce4a0c72ce)
+    
+    - JavaScript의 .addEventListener 이용
+    - 브로슈어 신청하기를 누르면 모달창열림
+
+![그림10](https://github.com/wkd6262/JJCproject/assets/142865132/404ade6b-6f10-4692-8869-7eb1fcb0ee56)
+
+- JavaScript의 .addEventListener 이용
+- 프로젝트 문의하기를 누르면 toggle 창 열리며 순차적으로동작하도록 구현
+
+- Inside
+    
+    ![그림12](https://github.com/wkd6262/JJCproject/assets/142865132/8fac9b43-cc23-4f04-bd9f-b5b8e79fa484)
+    
+    - GSAP - ScrollTrigger 이용
+    - .addEventListener를 이용한 스크롤 이벤트 효과 구현
+    - 스크롤이 해당 구간으로 오면 이미지가 스크롤 값에 맞춰 translateX 값이 변함
+    - 마우스 커서 움직임에 따라 이미지가 움직이는 효과
+- Footer
+    
+    ![그림3](https://github.com/wkd6262/JJCproject/assets/142865132/ba4d835e-8aa6-4625-91ed-8ea5236fd757)
+    
+    - JavaScript의 .addEventListener 이용
+    - 사이트 사용자의 이동 편리성을 위해 Family Site 모달창 추가
+
+---
+
+### **문제 및 해결**
+
+- **상황 1**
+    
+    서브페이지 설계 중 사전에 맞춘 디렉토리 구조에 맞게 경로 작성 했으나 이미지가 누락되는 상황 발생
+    
+    - **문제 확인 및 해결**
+        
+        경로가 멀어서 로딩이 오래 걸렸던 것. 
+        
+        ⇒ 각 서브 폴더 안에 이미지 폴더를 추가해서 경로를 줄임
+        
+- **상황 2**
+    
+    메인페이지의 파트를 나눠 각자 작업한 다음 병합 했더니 레이아웃이 무너지고, 동작들이 구현되지 않는 
+    
+    상황 발생
+    
+    - **문제 확인 및 해결**
+        
+        CSS에서 준 속성들에서 충돌이 일어나면서 JavaScript까지 영향
+        
+        ⇒ 개인 작업을 토대로 한 사람이 HTML, CSS를 다시 설계한 다음 필요한 JavaScript를 넣음
+        
+- **상황 3**
+    
+    메인 인트로 부분에 sticky 속성을 이용해서 아래 콘텐츠가 인트로 위로 겹치면서 올라오는 효과를
+    
+    주려 했으나 실패
+    
+    - **문제 확인 및 해결**
+        
+        sticky 대신 JavaScript 스크롤이벤트효과와 transition 값을 줘서 해결
+        
+- **상황 4**
+    
+    메인 Contact 부분에서 ‘브로슈어 신청하기’을 누르면 모달창이 열림과 동시에 페이지 최상단으로 이동하는 오류 발생
+    
+    - **문제 확인 및 해결**
+        
+        JavaScript에서 <a>태그 기본 성격을 지우지 않아서 발생
+        
+        ⇒ .preventDefault로 제거하여 해결 
+        
+- **상황 5**
+    
+    기존 사이트에서 가져온 svg에 GSAP MotionPath을 적용되지 않는 상황 발생
+    
+    - **문제 확인 및 해결**
+        
+        서브페이지 타이틀에 들어가는 모션은 이미지로 대체하고, 메인 about 파트는 제작한 영상으로 대체
+        
 
 ---
 
