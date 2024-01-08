@@ -1,5 +1,7 @@
 # JJC 팀 프로젝트
 
+# JJC 장원준 개인 보고서
+
 ## 프로젝트 개요
 
 - 수업에서 학습한 지식과 퍼블리싱 기술을 응용해 웹사이트를 개발
@@ -117,6 +119,84 @@
         
         서브페이지 타이틀에 들어가는 모션은 이미지로 대체하고, 메인 about 파트는 제작한 영상으로 대체
         
+
+## 요구사항 분석
+
+- Header
+    
+   ![그림2](https://github.com/wkd6262/JJCproject/assets/142865132/5badbc1a-bc72-4e84-8c50-7123f38e3327)
+    
+ ![헤더1](https://github.com/wkd6262/JJCproject/assets/142865132/25164eb4-7cee-4162-85b5-798702fe1712)
+    
+    - GSAP - ScrollTrigger 이용
+    - 스크롤에 따라 PC 버전 메뉴가 생겼다가 사라지는 효과 (가독성 상승)
+
+---
+
+- Intro
+    
+    ![그림4](https://github.com/wkd6262/JJCproject/assets/142865132/c6e51aca-4b55-4384-aa7f-e6c6c4a29298)
+    
+    - JavaScript의 마우스 좌표를 이용
+    - 마우스 커서 움직임에 따라 이미지가 움직이는 효과
+
+---
+
+- Works
+    
+    ![그림5](https://github.com/wkd6262/JJCproject/assets/142865132/3b544e18-07fc-4e28-b738-5ffcc12c3871)
+    
+    - CSS의 애니메이션 이용
+    
+    ![그림8](https://github.com/wkd6262/JJCproject/assets/142865132/e3e4921c-ce91-42d3-8b8d-01dd8aef56a3)
+
+    
+    - CSS: hover 이용
+    - 원하는 작업물에 마우스를 올리면 주황색 이미지가 올라오는 효과
+        - 작업물의 배너를 클릭하면 Works 페이지로 이동
+
+---
+
+- About
+    
+    ![그림6](https://github.com/wkd6262/JJCproject/assets/142865132/86e38c71-348c-4fbb-aaf0-98c02ad69d77)
+    
+    - GSAP - ScrollTrigger 이용
+    
+
+![그림7](https://github.com/wkd6262/JJCproject/assets/142865132/3bd919a6-0c45-4590-9ef8-6eaa140a83c1)
+
+- 스크롤을 내리면 원이 커지면서 올라오는 효과
+
+---
+
+- Contact
+    
+    ![그림9](https://github.com/wkd6262/JJCproject/assets/142865132/7d65f7e7-33ee-44bb-8219-629615ca7079)
+    
+    - JavaScript로 Kakao map 연결
+    - 마우스 커서 움직임에 따라 이미지가 움직이는 효과
+    
+    ![그림11](https://github.com/wkd6262/JJCproject/assets/142865132/7f987769-cb53-4040-b0ab-8aa83ba140e7)
+    
+    - JavaScript의 .addEventListener 이용
+    - 브로슈어 신청하기를 누르면 모달창열림
+
+![그림10](https://github.com/wkd6262/JJCproject/assets/142865132/404ade6b-6f10-4692-8869-7eb1fcb0ee56)
+
+- JavaScript의 .addEventListener 이용
+- 프로젝트 문의하기를 누르면 toggle 창 열리며 순차적으로동작하도록 구현
+
+---
+
+- Inside
+    
+    ![그림12](https://github.com/wkd6262/JJCproject/assets/142865132/8fac9b43-cc23-4f04-bd9f-b5b8e79fa484)
+    
+    - GSAP - ScrollTrigger 이용
+    - .addEventListener를 이용한 스크롤 이벤트 효과 구현
+    - 스크롤이 해당 구간으로 오면 이미지가 스크롤 값에 맞춰 translateX 값이 변함
+    - 마우스 커서 움직임에 따라 이미지가 움직이는 효과
 
 ---
 
@@ -272,8 +352,7 @@ const mInp = document.querySelector('.m-inp');
         - gsap가 들어간 사이트를 참고해 코드에 대한 이해와 플러그인 응용법을 익힘
         - 네이버 블로그를 통해 직접 예제를 만들어 학습함
         
-      ![Untitled](https://github.com/wkd6262/JJCproject/assets/142865132/db78982b-0a88-415b-aba9-f59ea1c2097b)
-
+        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/3144f39e-f821-47a0-a5b2-b520c2dcda89/8a579f93-ea1f-4793-b435-04ed119e92cf/Untitled.png)
         
 - **창의적 대안 발견:** 어려운 부분에서도 포기하지 않고 창의적인 대안을 찾아내어 높은 완성도의 웹사이트를 구현하는 경험
 - **향후 프로젝트에 적용:** 앞으로의 프로젝트에서도 이러한 경험을 토대로 더 나은 결과물 창출
