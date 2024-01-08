@@ -234,6 +234,8 @@ const mInp = document.querySelector('.m-inp');
 
 - JavaScript의 .addEventListener 이용
 - 프로젝트 문의하기를 누르면 toggle 창 열리며 순차적으로동작하도록 구현
+  
+---
 
 - Inside
     
@@ -243,6 +245,9 @@ const mInp = document.querySelector('.m-inp');
     - .addEventListener를 이용한 스크롤 이벤트 효과 구현
     - 스크롤이 해당 구간으로 오면 이미지가 스크롤 값에 맞춰 translateX 값이 변함
     - 마우스 커서 움직임에 따라 이미지가 움직이는 효과
+      
+---
+
 - Footer
     
     ![그림3](https://github.com/wkd6262/JJCproject/assets/142865132/ba4d835e-8aa6-4625-91ed-8ea5236fd757)
