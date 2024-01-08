@@ -209,7 +209,7 @@ const mInp = document.querySelector('.m-inp');
     
     ![그림6](https://github.com/wkd6262/JJCproject/assets/142865132/86e38c71-348c-4fbb-aaf0-98c02ad69d77)
     
-    - GSAP - ScrollTrigger 이용
+- GSAP - ScrollTrigger 이용
     
 
 ![그림7](https://github.com/wkd6262/JJCproject/assets/142865132/3bd919a6-0c45-4590-9ef8-6eaa140a83c1)
