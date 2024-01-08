@@ -170,17 +170,42 @@ const mInp = document.querySelector('.m-inp');
     - 팀 프로젝트 발표
 
 ---
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  th {
+    font-weight: bold;
+  }
+
+  .page {
+    font-weight: bold;
+  }
+
+  .description {
+    width: 60%;
+  }
+</style>
+
 ## 페이지 구성
 
 | 페이지        | 설명                                           | 이미지                                                      |
 |--------------|------------------------------------------------|-------------------------------------------------------------|
-| Header       | GSAP - ScrollTrigger을 이용한 메뉴 효과        | <img src="https://github.com/wkd6262/JJCproject/assets/142865132/5badbc1a-bc72-4e84-8c50-7123f38e3327" height="200"> <img src="https://github.com/wkd6262/JJCproject/assets/142865132/25164eb4-7cee-4162-85b5-798702fe1712" height="200"> |
-| Intro        | 마우스 좌표를 이용한 이미지 움직임 효과       | <img src="https://github.com/wkd6262/JJCproject/assets/142865132/c6e51aca-4b55-4384-aa7f-e6c6c4a29298" height="200">                                    |
-| Works        | CSS 애니메이션 및 hover 효과 구현            | <img src="https://github.com/wkd6262/JJCproject/assets/142865132/3b544e18-07fc-4e28-b738-5ffcc12c3871" height="200"> <img src="https://github.com/wkd6262/JJCproject/assets/142865132/e3e4921c-ce91-42d3-8b8d-01dd8aef56a3" height="200"> |
-| About        | GSAP - ScrollTrigger을 이용한 텍스트 효과     | <img src="https://github.com/wkd6262/JJCproject/assets/142865132/86e38c71-348c-4fbb-aaf0-98c02ad69d77" height="200"> <img src="https://github.com/wkd6262/JJCproject/assets/142865132/3bd919a6-0c45-4590-9ef8-6eaa140a83c1" height="200"> |
-| Contact      | Kakao Map 연결 및 모달창 구현               | <img src="https://github.com/wkd6262/JJCproject/assets/142865132/7d65f7e7-33ee-44bb-8219-629615ca7079" height="200"> <img src="https://github.com/wkd6262/JJCproject/assets/142865132/99e3bf1d-a5ee-476e-ac4b-a2ce4a0c72ce" height="200"> <img src="https://github.com/wkd6262/JJCproject/assets/142865132/404ade6b-6f10-4692-8869-7eb1fcb0ee56" height="200"> |
-| Inside       | GSAP - ScrollTrigger을 이용한 이미지 효과     | <img src="https://github.com/wkd6262/JJCproject/assets/142865132/8fac9b43-cc23-4f04-bd9f-b5b8e79fa484" height="200">                                    |
-| Footer       | JavaScript를 이용한 Family Site 모달창 추가   | <img src="https://github.com/wkd6262/JJCproject/assets/142865132/ba4d835e-8aa6-4625-91ed-8ea5236fd757" height="200">                                    |
+| **Header**   | GSAP - ScrollTrigger을 이용한 메뉴 효과        | <img src="https://github.com/wkd6262/JJCproject/assets/142865132/5badbc1a-bc72-4e84-8c50-7123f38e3327" height="200"> <img src="https://github.com/wkd6262/JJCproject/assets/142865132/25164eb4-7cee-4162-85b5-798702fe1712" height="200"> |
+| **Intro**    | 마우스 좌표를 이용한 이미지 움직임 효과       | <img src="https://github.com/wkd6262/JJCproject/assets/142865132/c6e51aca-4b55-4384-aa7f-e6c6c4a29298" height="200">                                    |
+| **Works**    | CSS 애니메이션 및 hover 효과 구현            | <img src="https://github.com/wkd6262/JJCproject/assets/142865132/3b544e18-07fc-4e28-b738-5ffcc12c3871" height="200"> <img src="https://github.com/wkd6262/JJCproject/assets/142865132/e3e4921c-ce91-42d3-8b8d-01dd8aef56a3" height="200"> |
+| **About**    | GSAP - ScrollTrigger을 이용한 텍스트 효과     | <img src="https://github.com/wkd6262/JJCproject/assets/142865132/86e38c71-348c-4fbb-aaf0-98c02ad69d77" height="200"> <img src="https://github.com/wkd6262/JJCproject/assets/142865132/3bd919a6-0c45-4590-9ef8-6eaa140a83c1" height="200"> |
+| **Contact**  | Kakao Map 연결 및 모달창 구현               | <img src="https://github.com/wkd6262/JJCproject/assets/142865132/7d65f7e7-33ee-44bb-8219-629615ca7079" height="200"> <img src="https://github.com/wkd6262/JJCproject/assets/142865132/99e3bf1d-a5ee-476e-ac4b-a2ce4a0c72ce" height="200"> <img src="https://github.com/wkd6262/JJCproject/assets/142865132/404ade6b-6f10-4692-8869-7eb1fcb0ee56" height="200"> |
+| **Inside**   | GSAP - ScrollTrigger을 이용한 이미지 효과     | <img src="https://github.com/wkd6262/JJCproject/assets/142865132/8fac9b43-cc23-4f04-bd9f-b5b8e79fa484" height="200">                                    |
+| **Footer**   | JavaScript를 이용한 Family Site 모달창 추가   | <img src="https://github.com/wkd6262/JJCproject/assets/142865132/ba4d835e-8aa6-4625-91ed-8ea5236fd757" height="200">  
 ---
 
 ## 페이지 구성
