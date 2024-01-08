@@ -169,6 +169,21 @@ const mInp = document.querySelector('.m-inp');
     - 파워포인트 템플릿 작성
     - 팀 프로젝트 발표
 
+---
+## 페이지 구성
+
+| 페이지        | 설명                                           | 이미지                                                      |
+|--------------|------------------------------------------------|-------------------------------------------------------------|
+| Header       | GSAP - ScrollTrigger을 이용한 메뉴 효과        | ![Header](https://github.com/wkd6262/JJCproject/assets/142865132/5badbc1a-bc72-4e84-8c50-7123f38e3327)                                    |
+| Intro        | 마우스 좌표를 이용한 이미지 움직임 효과       | ![Intro](https://github.com/wkd6262/JJCproject/assets/142865132/c6e51aca-4b55-4384-aa7f-e6c6c4a29298)                                    |
+| Works        | CSS 애니메이션 및 hover 효과 구현            | ![Works](https://github.com/wkd6262/JJCproject/assets/142865132/3b544e18-07fc-4e28-b738-5ffcc12c3871)                                    |
+| About        | GSAP - ScrollTrigger을 이용한 텍스트 효과     | ![About](https://github.com/wkd6262/JJCproject/assets/142865132/86e38c71-348c-4fbb-aaf0-98c02ad69d77)                                    |
+| Contact      | Kakao Map 연결 및 모달창 구현               | ![Contact](https://github.com/wkd6262/JJCproject/assets/142865132/7d65f7e7-33ee-44bb-8219-629615ca7079)                                   |
+| Inside       | GSAP - ScrollTrigger을 이용한 이미지 효과     | ![Inside](https://github.com/wkd6262/JJCproject/assets/142865132/8fac9b43-cc23-4f04-bd9f-b5b8e79fa484)                                    |
+| Footer       | JavaScript를 이용한 Family Site 모달창 추가   | ![Footer](https://github.com/wkd6262/JJCproject/assets/142865132/ba4d835e-8aa6-4625-91ed-8ea5236fd757)                                    |
+
+---
+
 ## 페이지 구성
 
 - Header
