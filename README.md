@@ -1,7 +1,5 @@
 # JJC 팀 프로젝트
 
-# JJC 장원준 개인 보고서
-
 ## 프로젝트 개요
 
 - 수업에서 학습한 지식과 퍼블리싱 기술을 응용해 웹사이트를 개발
@@ -124,7 +122,7 @@
 
 - Header
     
-   ![그림2](https://github.com/wkd6262/JJCproject/assets/142865132/5badbc1a-bc72-4e84-8c50-7123f38e3327)
+ ![그림2](https://github.com/wkd6262/JJCproject/assets/142865132/5badbc1a-bc72-4e84-8c50-7123f38e3327)
     
  ![헤더1](https://github.com/wkd6262/JJCproject/assets/142865132/25164eb4-7cee-4162-85b5-798702fe1712)
     
