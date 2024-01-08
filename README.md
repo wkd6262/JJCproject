@@ -200,6 +200,15 @@
 
 ---
 
+- Footer
+    
+    ![그림3](https://github.com/wkd6262/JJCproject/assets/142865132/ba4d835e-8aa6-4625-91ed-8ea5236fd757)
+    
+    - JavaScript의 .addEventListener 이용
+    - 사이트 사용자의 이동 편리성을 위해 Family Site 모달창 추가
+
+---
+
 # 코드가이드 라인
 
 ## 공통(HTML/CSS)
@@ -352,7 +361,7 @@ const mInp = document.querySelector('.m-inp');
         - gsap가 들어간 사이트를 참고해 코드에 대한 이해와 플러그인 응용법을 익힘
         - 네이버 블로그를 통해 직접 예제를 만들어 학습함
         
-        ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/3144f39e-f821-47a0-a5b2-b520c2dcda89/8a579f93-ea1f-4793-b435-04ed119e92cf/Untitled.png)
+        ![Untitled](https://github.com/wkd6262/JJCproject/assets/142865132/5f5e0132-1db0-4095-899b-fc9e57559781)
         
 - **창의적 대안 발견:** 어려운 부분에서도 포기하지 않고 창의적인 대안을 찾아내어 높은 완성도의 웹사이트를 구현하는 경험
 - **향후 프로젝트에 적용:** 앞으로의 프로젝트에서도 이러한 경험을 토대로 더 나은 결과물 창출
