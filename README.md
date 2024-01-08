@@ -65,128 +65,125 @@
     header - 각 서브페이지 연결, 토글메뉴
 
 
-    # JJC 퍼블리싱 가이드라인
+  # JCC 코드 가이드 라인! (1)
 
 ## 공통(HTML/CSS)
 
-- 각 구간 안에는 <div>로 구분
-- <class>명: 해당 구간에 '앞글자(소문자)_의미 있는 명'을 붙임
+- 각 구간 안에는 div로 구분하고 클래스명을 부여할 때 해당 구간에
     
-    **ex:** header 안에 menu => h_menu
+    '앞글자(소문자)'를 따고 '_'를 사용해 뒤에 '의미있는 이름'을 붙여줌
     
-
-```jsx
-<section class="main">
-    <main>
-        <div class="m_content">
-            <!-- 메인 콘텐츠 내용 -->
-        </div>
-    </main>
-</section>
-
-<section class="footer">
-    <footer>
-        <div class="f_info">
-            <!-- 푸터 정보 내용 -->
-        </div>
-    </footer>
-</section
-```
-
-- 작업 중간 중간 W3C 유효성 검사 필수
+    (ex: header 안에 menu =>h_menu)
+    
+    ```jsx
+    <section class="main">
+        <main>
+            <div class="m_content">
+                <!-- 메인 콘텐츠 내용 -->
+            </div>
+        </main>
+    </section>
+    
+    <section class="footer">
+        <footer>
+            <div class="f_info">
+                <!-- 푸터 정보 내용 -->
+            </div>
+        </footer>
+    </section
+    ```
+    
+- 작업 중간 중간 W3C유효성 검사 필수.
 - 주석으로 알아보기 쉽게 구간 표시
 
 ## **HTML**
 
-1. **구간**
-- 구간 태그는 <header>, <secticon>, <footer> 사용
-- <section>의 <class>명은 해당 페이지의 제목으로 작성
-    
-    **ex:** works->works / contact->contact
-    
-- css, js는 외부 링크로 작성
-- 외부 링크 순서: <title> 하단에 og → favicon → font → reset → css
-- <script>의 외부 링크는 끝나는 </body> 위에 넣음
-- <meta>는 <title> 상단에 작성
-1. **들여쓰기**
-- space bar 2칸 기본 작성
+1. 구간**:**
+- 구간 태그 header는 <header>,<main>,<footer>로 구분
+- main을 구분할 때는 해당 페이지의 이름을 Class명으로 부여 (ex: works->works/contact->contact)
+- css, js 작업은 외부 링크로만 작성
+- 외부링크는 <title> 아래로 태그, og, favicon, font, reset, style 순으로 넣음
+1. **들여쓰기:**
+- 탭 2칸 (스페이스 사용x)
+1. **파비콘 링크 추가하기:** 웹페이지의 **`<head>`** 섹션에 아래 코드를 추가하여 파비콘을 설정합니다. 예시는 파비콘 파일이 "favicon.ico"로 저장되어 있는 경우입니다:
+
+```html
+htmlCopy code
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+```
+
+이 코드는 파비콘 파일의 경로를 지정하고, 파비콘이 지원되지 않는 브라우저를 위해 타입을 지정합니다.
 
 ## **CSS**
 
 1. **선택자**
-- <class>명을 기본으로 작성
-- 작성법: 하위 선택자 기본
+- 선택자는 클래스명을 기본으로
+- 하위 선택자를 기본으로 작성하고 특수한 경우에 그 외 선택자를 사용함
     
-    **ex: .**h_container .btn{} (o) / **.**h_container > .btn{} or .btn{} or a{} (x)
+    <header>
     
-
-```jsx
-<header>
-	<div class=“h_container”>
-		<a class=”btn”></a>
-		<a class=”btn”></a>
-	</div>
-</header>
-```
-
-- 특수한 경우에 그 외 선택자를 사용
+    <div class= “h_container”>
     
-    **ex:** a에 스타일이 공통적으로 들어가는 경우 **→** a{} (o)
+    <a class=”btn”> </a>
     
-1. **스타일** **시트 순서**
-- header → main → footer 작업
-1. **font**
-- font-family: ‘Pretendard’, *apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕",  "Apple SD Gothic Neo", sans-serif;*
-- 모바일과 PC는 동일하게 사용
+    </div>
+    
+    </header>
+    
+    css = > .btn {스타일}     / 특수한 경우 (btn이 겹칠때) h_container .btn {스타일}
+    
+1. **스타일** **시트** **구조:**
+- 스타일 순서는 일관성 있게 header → main → footer 작업
+1. **효율적인 스타일 구조**
+- 이미지 단위 : px 고정 필요에따라 %사용
+- font-family:  ‘Pretendard’- 먼저 사용 ‘맑은 고딕’ ‘san-serif’ 순으로 사용 모바일과 통일성 유지를 위해 모바일도 동일하게 작성.
 1. **미디어 쿼리**
-- 모바일 기준으로 작업 후 PC 작업
-- 브레이크 포인트: 모바일 ( width >= 200px ) / PC ( width>= 1200px ) 설정
+- 모바일 기준으로 작업 후 pc 작업
+    
+    브레이크 포인트 : 모바일 >= 350px , pc >= 1200px 설정
+    
 
 ## **JavaScript**
 
-1. **식별자명**
-- 카멜표기법
-- 변수 선언: 지역변수 기본 작성
-- 변수명: 개발자들의 관습적인 명 사용
+1. 식별자**명:**
+- 변수 선언은 지역변수로 작성을 기본
+- 변수 이름은 개발자들의 관습적인 이름을 사용
 
 ```jsx
-
-// 예: 관습적인 명과 한글 주석은 상단 위치
-
+javascriptCopy code
+// 예: 명확한 변수명과 한글 주석
+const btn = document.querySelector('.h-btn'); 
 // 버튼 엘리먼트를 선택
-const btn = document.querySelector('.h_btn'); 
+const inp = document.querySelector('.h-inp');   
 // 입력 엘리먼트를 선택
-const inp = document.querySelector('.h_inp');   
 
----------------------------------------------------
-
-// 틀린 예 : 자기만의 코드명 사용
-
-const mybtn123 = document.querySelector('.m_btn');
-// 버튼 엘리먼트를 선택 
-const hellobtn = document.querySelector('.m_inp');   
+javascriptCopy code
+// 예: 코드가 겹칠때
+const mBtn = document.querySelector('.m-btn'); 
+main > btn = mbtn = 명확한 표기를 위해 카멜표기법 mBtn
+// 버튼 엘리먼트를 선택
+const mInp = document.querySelector('.m-inp');   
 // 입력 엘리먼트를 선택
 ```
 
-1. **이벤트 처리**
-- 이벤트는 .addEventListener 를 사용
-- .onclick 사용은 지양
+2. **event 변수**
 
-## **JavaScript GSAP Plugins**
+이벤트리스너안에 콜백함수를 다 쓸것인지. 어조는 간결하게. 통일성있게.
 
-- GSAP 플러그인 링크는 <script> 최상단에 넣음
+**이벤트 처리 및 addEventListener 사용:**
 
-```jsx
-//플러그인은 항상 상단에 위치시킨다.
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+- 코드에서 이벤트 처리는 **`addEventListener`** 함수를 통해 수행됩니다. 이 방법은 JavaScript 코드와 HTML을 명확하게 분리하여 코드의 구조를 개선하고 관리성을 향상시킵니다.
 
-<script>
-	...~~
-</script>
-```
+**이벤트 객체와 event 변수 활용:**
 
-- 사용 플러그인: ScrollTrigger v*3.12.2*, ScrollSmoother *v3.10.0*
+- **`addEventListener`** 함수를 활용할 때, 이벤트 핸들러 함수 내부에서 **`event`** 변수를 사용하여 이벤트 객체에 접근합니다. 이 객체에는 이벤트와 관련된 다양한 정보와 속성이 포함되어 있어 코드 내부에서 이 정보를 활용할 수 있습니다.
+
+**"onclick" 속성 사용의 제한:**
+
+- HTML 요소에 "onclick" 속성을 직접 사용하여 이벤트 핸들러를 할당하는 것은 지양하며, 대신 **`addEventListener`** 함수를 활용하여 이벤트 처리를 구현합니다. 이로써 코드의 유지 보수성을 향상시키고 가독성을 높입니다.
 
 ### **문제 및 해결**
 
