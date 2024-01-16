@@ -156,6 +156,16 @@ const mInp = document.querySelector('.m-inp');
 
 ## 담당 업무
 
+- **장원준**
+    - 리더 / main - intro 파트 / sub - Inside 페이지
+    - header nav toggle 메뉴 구현
+- **정하솔**
+    - GitHub 관리 / main - about, contact 파트 /  sub - Contact 페이지
+    - header PC 메뉴 GSAP ScrollTrigger 구현
+- **최수민**
+    - 보고서 및 회의록 작성 / main - works 파트 / sub - Works 페이지
+    - Adobe After Effects로 메인 about 궤도 모션 영상 제작
+
 - **리더**
     - 코드 가이드라인 정의
     - 작업 계획 작성 및 팀원 일정 조율
