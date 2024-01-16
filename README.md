@@ -159,6 +159,18 @@ const mInp = document.querySelector('.m-inp');
 - **장원준**
     - 리더 / main - intro 파트 / sub - Inside 페이지
     - header nav toggle 메뉴 구현
+    - **리더**
+        - 코드 가이드라인 정의
+        - 작업 계획 작성 및 팀원 일정 조율
+        - gsap에 대한 학습사이트 제공과 원리를 알기 쉽게 주석으로 표시
+        - 작업 시 팀원들의 문제해결을 리더로써 적극적으로 도움
+    - **작업**
+        - main - intro 파트 / sub - Inside 페이지
+        - header nav toggle 메뉴 구현
+        - Javascript를 이용해 다양한 이벤트 구현
+        - 파워포인트 템플릿 작성
+        - 팀 프로젝트 발표
+
 - **정하솔**
     - GitHub 관리 / main - about, contact 파트 /  sub - Contact 페이지
     - header PC 메뉴 GSAP ScrollTrigger 구현
@@ -166,18 +178,6 @@ const mInp = document.querySelector('.m-inp');
     - 보고서 및 회의록 작성 / main - works 파트 / sub - Works 페이지
     - Adobe After Effects로 메인 about 궤도 모션 영상 제작
 
-- **리더**
-    - 코드 가이드라인 정의
-    - 작업 계획 작성 및 팀원 일정 조율
-    - gsap에 대한 학습사이트 제공과 원리를 알기 쉽게 주석으로 표시
-    - 작업 시 팀원들의 문제해결을 리더로써 적극적으로 도움
-
-- **작업**
-    - main - intro 파트 / sub - Inside 페이지
-    - header nav toggle 메뉴 구현
-    - Javascript를 이용해 다양한 이벤트 구현
-    - 파워포인트 템플릿 작성
-    - 팀 프로젝트 발표
 
 ---
 ## 페이지 구성
