@@ -143,7 +143,7 @@ const mInp = document.querySelector('.m-inp');
 
 ## 디렉토리 구조
 
-![그림1](https://github.com/wkd6262/JJCproject/assets/142865132/0c88fd8a-3c63-41e7-a093-66975ece31bb)
+<img src="https://github.com/wkd6262/JJCproject/assets/142865132/0c88fd8a-3c63-41e7-a093-66975ece31bb" alt="그림1" height="400">
 
 ---
 
